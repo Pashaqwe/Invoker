@@ -21,7 +21,7 @@ let e = 0;
 
 
 
-function events (callback) {
+function events () {
   quas.addEventListener('click', () => {
     q++;
     skills();
@@ -37,8 +37,9 @@ function events (callback) {
 invoke.addEventListener('click', ()=> {
   r++;
   skills();
+  zero();
 });
-    setInterval(zero,2000);
+
 }
 
 events();
